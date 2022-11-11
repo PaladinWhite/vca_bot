@@ -64,7 +64,7 @@ def echo_message(message):
 @server.route("/")
 def webhook():
     bot.remove_webhook()
-    bot.set_webhook(url='https://your_heroku_project.com/' + TOKEN)
+    bot.set_webhook(url='flask-on-koyeb-paladinwhite.koyeb.app/' + TOKEN)
     return "!", 200
 
 
