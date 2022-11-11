@@ -1,0 +1,816 @@
+DOMANDA 1:
+Si consideri il seguente frammento di codice Java:
+public interface I {
+       public void f();
+}
+public interface J {
+       public void g();
+}
+public class C implements I,J {
+       public void f() { }
+       public void g() { }
+}
+Sia p una variabile di tipo I che contiene l'indirizzo di un oggetto di tipo C e q una variabile di tipo J.
+• L'istruzione q = p; genera un errore di compilazione.
+
+DOMANDA 2:
+Si considerino le classi Solido e Cubo riportate di seguito:
+public class Solido {
+       public double volume;
+       public Solido (double volume) {
+       this.volume=volume;
+       }
+}
+public class Cubo extends Solido {
+       public double lato;
+       public Cubo (double lato) {
+       super ();
+       this.lato=lato;
+       this.volume=this.lato*this.lato*this.lato;
+       }
+       public static void main (String[] args) {
+       Cubo c=new Cubo (2.0);
+       System.out.println (c.volume);
+       }
+}
+• La classe Cubo causa un errore a tempo di compilazione, perché il suo costruttore invoca il costruttore senza argomenti della classe Solido, che però non è definito.
+
+DOMANDA 3:
+Quale categoria di grafi semplici (non orientati e privi di self-loop) non ammette una foresta ricoprente?
+• Nessuna
+
+DOMANDA 4:
+Quanti cache miss può generare nel caso peggiore la scansione lineare di una lista collegata di n elementi assumendo una cache completamente associativa in cui ogni linea può contenere k nodi dell’array?
+• n
+
+DOMANDA 5:
+In generale, per progettare un sistema di controllo che permetta la reiezione completa del disturbo è necessario che:
+• il disturbo sia misurabile
+
+DOMANDA 6:
+Quale è la funzione principale che deve svolgere un router di una rete Internet
+• effettuare l’istradamento dei pacchetti IP in rete
+
+
+
+DOMANDA 7:
+Si consideri il seguente frammento di programma:
+public class ClasseConErrore {
+       public int k;
+       public ClasseConErrore(int x) {
+       k=x;
+       }
+       public ClasseConErrore(int x, int y) {
+       k=x*y;
+       }
+       public void stampa() {
+       System.out.println(k);
+       }
+       public static void main(String[] args) {
+       int k=12;
+       ClasseConErrore a = new ClasseConErrore();
+       ClasseConErrore b = new ClasseConErrore(k);
+       ClasseConErrore c = new ClasseConErrore(k,10);
+       a.stampa();
+       b.stampa();
+       c.stampa();
+       }
+}
+Il programma contiene un errore che ne impedisce la compilazione. Quale?
+• La funzione main tenta di istanziare un oggetto della classe ClasseConErrore usando un costruttore senza argomenti non definito.
+
+DOMANDA 8:
+Una sola delle seguenti affermazioni sul passaggio dei parametri in Java è vera. Quale? Al momento dell'invocazione di un metodo:
+• i parametri attuali dell'invocazione vengono copiati nei corrispondenti parametri formali dell'intestazione del metodo.
+
+DOMANDA 9:
+La chiusura transitiva di un DAG (grafo diretto aciclico) è un:
+• DAG
+
+DOMANDA 10:
+Nell'ambito del modello relazionale dei dati il join naturale è
+• un operatore che si applica a due relazioni e che combina le tuple delle due relazioni sulla base della uguaglianza degli attributi in comune alle due relazioni
+
+DOMANDA 11:
+Si consideri la seguente espressione Java: a==b, dove a e b sono riferimenti ad array di int. Una sola delle seguenti affermazioni è vera. Quale?
+• L'espressione vale true se a e b contengono lo stesso indirizzo, cioè puntano allo stesso array.
+
+DOMANDA 12:
+Il massimo numero di nodi di un albero binario di altezza h è
+• 2h+1-1
+
+DOMANDA 13:
+Una sola delle seguenti affermazioni è vera. Quale?
+• Un vincolo di foreign key tra un attributo A di una relazione R ed una relazione Q impone che ogni valore che compare in A compare anche nella chiave primaria di Q;
+
+DOMANDA 14:
+Nell’ indirizzamento in Internet la maschera di sotto-rete:
+• serve a rendere noto ad ogni sistema in che modo il l’indirizzo IP è suddiviso in modo gerarchico tra parte Net-ID e parte Host-ID
+DOMANDA 15:
+Si consideri il seguente metodo per il calcolo del fattoriale
+public static long fattoriale(long n) {
+       if (n == 0)
+       return 1;
+       else
+       return n * fattoriale(n-1);
+}
+Solo una delle seguenti affermazioni è vera. Dire quale.
+• Il record di attivazione relativo a fattoriale(2) viene sempre rimosso dallo stack prima del record di attivazione relativo a fattoriale(3).
+
+DOMANDA 16:
+Si consideri un sistema con una piccola cache completamente associativa contenente 2 sole linee da 16 byte ciascuna. Si consideri il seguente frammento di programma:
+int v[12];
+v[0]=5;
+v[1]=4;
+v[10]=3;
+v[8]=2;
+v[2]=v[10];
+v[9]=v[1];
+Il programma esibisce qualche tipo di località?
+• Sì, sia spaziale che temporale
+
+DOMANDA 17:
+In quale caso non è soddisfatta l’implicazione ¬p ? q:
+• se p è falso e q è falso 
+
+DOMANDA 18:
+Quali di queste affermazioni è vera per un sistema ad anello chiuso ed è falsa per un sistema ad anello aperto?
+• l'uscita del processo da controllare è misurabile ed è utilizzata dal controllore
+
+DOMANDA 19:
+Quali delle seguenti affermazioni relative al ciclo while è errata?
+• Al termine del ciclo la condizione di guardia ha sempre valore false 
+
+DOMANDA 20:
+La nozione di "ruolo" è una delle nozioni fondamentali del modello Entità-Relazione. Una sola delle seguenti affermazioni è vera. Quale?
+• Un ruolo identifica una partecipazione di una entità ad una relazione
+
+DOMANDA 21:
+Quale delle seguenti proposizioni è errata?
+• a ? b ? ¬a ? ¬b 
+
+DOMANDA 22:
+In una gerarchia di memoria, le latenze di accesso ai dati sono tali che:
+• Registri < L1 < L2 < L3 < memoria centrale < disco 
+
+DOMANDA 23:
+L'assegnazione degli autovalori consente di
+• controllare la risposta transitoria; 
+
+DOMANDA 24:
+In un albero binario completo di n nodi l'altezza è
+• ?(log n) 
+
+
+
+DOMANDA 25:
+Dato il sequente programma:
+public class test {
+       public static void main(String args[]) {
+       int i=1,
+       j=1;
+       try {
+       i++;
+       j--;
+       if(i/j > 1)
+       i++;
+       }
+       catch(ArithmeticException e) {
+       System.out.println(0);
+       }
+       catch(ArrayIndexOutOfBoundsException e) {
+       System.out.println(1);
+       }
+       catch(Exception e) {
+       System.out.println(2);
+       }
+       finally {
+       System.out.println(3);
+       }
+       System.out.println(4);
+       }
+}
+Quale dei seguenti numeri viene stampato ? Scegliere una risposta.
+• 0,3,4
+
+DOMANDA 26:
+Si consideri la classe ProvaSwitch, riportata di seguito:
+public class ProvaSwitch {
+       public static void conv(int x) {
+       switch (x) {
+       case 0:
+       System.out.print ("Zero");
+       case 1:
+       System.out.print ("Uno");
+       break;
+       default:
+       System.out.println ("Errore");
+       }
+       }
+       public static void main (String[] x) {
+       for (int i=0; i<=2; i++)
+       conv (i);
+}
+}
+Una sola delle seguenti affermazioni è vera. Quale?
+• L'esecuzione del metodo main causa la stampa di ZeroUnoUnoErrore 
+
+DOMANDA 27:
+Quali parti della dichiarazione di un metodo costituiscono la sua "segnatura" ?
+• Il nome del metodo ed il tipo, numero ed ordine dei parametri formali
+.
+DOMANDA 28:
+Quale delle seguenti asserzioni su un grafo semplice è falsa? (n = num. vertici, m = num. archi)
+• È certamente connesso 
+
+DOMANDA 29:
+Si consideri un sistema con una piccola cache ad indirizzamento diretto contenente 2 sole linee da 16 byte ciascuna. Quanti cache miss vengono generati dal seguente frammento di programma?
+int v[12];
+v[0]=5;
+v[1]=4;
+v[10]=3;
+v[8]=2;
+v[2]=v[10];
+v[9]=v[1];
+Assumere che l’array v sia allineato a un indirizzo multiplo di 16 byte e che la cache inizialmente non contenga alcun blocco di memoria in uso al processo.
+• 4 
+
+DOMANDA 30:
+A cosa servono le procedure di controllo d’errore effettuate in strati protocollari quali quello di collegamento o di trasporto (es: Forward Error Correction (FEC) e Automatic Repeat Request ARQ)?
+• a verificare la presenza di errori nella unità informative ricevute ed eventualmente correggerli
+
+DOMANDA 31:
+Si considerino i seguenti metodi:
+public static int cosaFa(int a, int b) {
+       if (a<b) return cosaFa(b-a);
+       else return cosaFa(a-b);
+}
+public static int cosaFa(int x) {
+       if (x>0) return -x;
+       else return 0;
+}
+Una sola delle seguenti affermazioni è vera. Quale?
+• L'invocazione cosaFa(a,b) restituisce il valore assoluto della differenza fra a e b, cambiato di segno
+
+DOMANDA 32:
+Una sola delle seguenti affermazioni sul modello Entità-Relazione è vera. Quale?
+• Un identificatore di una relazione può comprendere sia i ruoli coinvolti in tale relazione sia gli attributi definiti per tale 
+
+DOMANDA 33:
+Gli autovalori di un sistema ad anello chiuso coincidono con
+• i poli della funzione di trasferimento ad anello chiuso più eventuali autovalori nascosti
+
+DOMANDA 34:
+Siano R1(A1,A2) e R2(A1,A3) due schemi di relazione. Si consideri la seguente query espressa in SQL:
+       SELECT *
+       FROM R1, R2
+       WHERE R1.A1=R2.A1
+Una sola delle seguenti affermazioni è vera. Quale?
+• la query corrisponde ad un'espressione dell'algebra relazionale in cui si usa la sola operazione di join naturale
+
+DOMANDA 35:
+Qual è il costo di cancellazione di una chiave in un albero di ricerca binario (BST)?
+• O(n) X
+
+
+
+DOMANDA 36:
+Una sola delle seguenti affermazioni è corretta. Quale?
+• Per definire una classe C appartenente al package p è sufficiente creare una directory p e scrivere la classe in un file all'interno della directory p contenente la dichiarazione package p; class C { ... }; 
+
+DOMANDA 37:
+Nel trasferimento di una stringa binaria di L bit su un mezzo fisico di lunghezza uguale a D km, l’intervallo di tempo che intercorre tra l’emissione del primo bit della stringa e la ricezione dell’ultimo bit (e cioè il ritardo di trasferimento della stringa):
+• dipende in generale da L e da D 
+
+DOMANDA 38:
+Si consideri la seguente classe:
+public class Overloading{
+       public void foo(String s) {}
+       public void foo(String s, int i) {}
+       public String foo(String s) {return s;}
+}
+Una sola delle seguenti affermazioni è vera. Quale?
+• Il compilatore da un errore di compilazione poichè il primo e l'ultimo metodo hanno la stessa firma.
+.
+DOMANDA 39:
+Qual è il tempo tipico di accesso (latenza) a un disco (tradizionale, non a stato solido)?
+• 1-10 millisecondi 
+
+DOMANDA 40:
+A quale fra le seguenti categorie appartiene un grafo con n > 1 nodi e m = 0 archi?
+• DAG 
+
+DOMANDA 41:
+Quale tipologia di visita in profondità di un albero risulta asintoticamente più rapida?
+• Tutte a pari merito 
+
+DOMANDA 42:
+In un sistema interconnesso
+• la dimensione dello stato è pari alla soma delle dimensioni dei sottosistemi
+
+DOMANDA 43:
+Consideriamo la relazione Persona(nome,citta,eta), che memorizza il nome, l'età e la città di residenza delle persone. Per ogni città, si vuole calcolare il numero delle persone maggiorenni (la cui età è maggiore di 18) che vivono in quella città. Una sola delle seguenti affermazioni è vera. Quale?
+• La query SQL corretta è: 
+       SELECT citta, count(*)
+       FROM Persona
+       WHERE eta > 18
+       GROUP BY citta
+
+DOMANDA 44:
+Una sola delle seguenti affermazioni è vera. Quale? Una variabile locale è visibile:
+• nel solo blocco di istruzioni { ... } in cui la variabile appare. 
+
+DOMANDA 45:
+In una architettura protocollare a strati di tipo OSI quale strato è generalmente responsabile di determinare il cammino migliore per instradare un pacchetto dati?
+• lo strato di rete
+
+
+
+DOMANDA 46:
+Quanto grande è lo spazio di memoria virtuale che è possibile indirizzare usando un puntatore a 16 bit?
+• 64 KB 
+
+DOMANDA 47:
+Un blocco allocato dinamicamente con malloc/calloc da un processo è memorizzato nel segmento:
+• HEAP 
+
+DOMANDA 48:
+Si consideri uno schema Entità-Relazione in cui l'entità STUDENTE ha l'attributo MATRICOLA ed è legata all'entità UNIVERSITÀ dalla relazione ISCRITTO. Si vuole esprimere nello schema il vincolo che non esistono due studenti iscritti alla stessa università che hanno la stessa matricola. Una sola delle seguenti affermazioni è vera. Quale?
+• Si può esprimere il vincolo definendo l'attributo MATRICOLA ed il ruolo STUDENTE nella relazione ISCRITTO come un identificatore esterno per STUDENTE
+
+DOMANDA 49:
+Si consideri la classe ProvaCiclo, riportata di seguito:
+import javax.swing.JOptionPane;
+public class ProvaCiclo {
+       public static void main (String[] args) {
+int i=Integer.parseInt (JOptionPane.showInputDialog ("Immetti un intero positivo"));
+       while (i>0) {
+       System.out.println (i);
+       i--;
+       }
+       }
+}
+Una sola delle seguenti affermazioni è vera. Quale?
+• Il metodo main contiene un esempio di ciclo indefinito. 
+
+DOMANDA 50:
+Si consideri la seguente classe:
+public class Persona {
+       public String nome;
+       public int eta;
+       public static Persona[] creaDaArray(String[] nomi, int[] eta) {
+       if (nomi.length != eta.length) return null;
+       Persona[] v = new Persona[nomi.length];
+       for (int i=0; i<v.length; ++i) {
+       v[i].nome = nomi[i];
+       v[i].eta = eta[i];
+       }
+       return v;
+       }
+}
+Una sola delle seguenti affermazioni sul metodo creaDaArray è vera. Quale?
+• Il metodo genera una eccezione di tipo NullPointerException.
+.
+DOMANDA 51:
+Il problema di trasporre una matrice quadrata ha costo computazionale (nella dimensione dell'input)
+• lineare 
+
+
+
+
+DOMANDA 52:
+Quali tra le seguenti istruzioni dichiara e inizializza correttamente un array bidimensionale ? Scegliere una risposta.
+• int a[][] = new int[10][10]; 
+
+DOMANDA 53:
+Il luogo delle radici permette di individuare una compensazione atta
+• a stabilizzare asintoticamente il sistema complessivo
+
+DOMANDA 54:
+In una cache completamente associativa:
+• Ogni blocco di memoria può essere ospitato in qualsiasi blocco di cache
+
+DOMANDA 55:
+Da un punto di vista prestazionale, un modo di trasferimento in rete di tipo a pacchetto è indicato
+• soprattutto quando le sorgenti di traffico sono prevalentemente intermittenti (es: dati On-Off) 
+
+DOMANDA 56:
+Si consideri la classe ProvaInit, riportata di seguito:
+public class ProvaInit {
+       private int x, y;
+       public int somma () {return x+y; }
+       public static void main (String[] args) {
+       ProvaInit p=new ProvaInit ();
+       p.x=10;
+       System.out.println (p.somma ());
+       }
+}
+Una sola delle seguenti affermazioni è vera. Quale?
+• La classe compila correttamente. L'esecuzione del metodo main stampa 10, perche? la variabile di istanza y viene automaticamente inizializzata a 0.
+
+DOMANDA 57:
+Il minimo numero di foglie di un albero binario di n nodi è
+• 1 
+
+DOMANDA 58:
+In un sistema dinamico lineare
+• la risposta si compone di una parte libera ed una forzata; 
+
+DOMANDA 59:
+La fase di progettazione logica di basi di dati procede attraverso i passi di ristrutturazione dello schema concettuale, traduzione diretta e ristrutturazione dello schema logico. Una sola delle seguenti affermazioni sulla progettazione logica è corretta. Quale?
+• La traduzione diretta ha lo scopo di derivare lo schema logico corrispondente allo schema concettuale ristrutturato, traducendo ogni entità in una tabella, ed ogni relazione non accorpata in una tabella.
+
+DOMANDA 60:
+Quale fra le seguenti di norma non è una proprietà delle funzioni hash?
+• Suriettività 
+
+DOMANDA 61:
+Si consideri un’architettura di comunicazione protocollare a strati (layered); In un sistema terminale (es. un PC connesso in rete) il flusso informativo di dati attraversa gli strati protocollari:
+• in senso gerarchico decrescente se il terminale è di origine
+
+DOMANDA 62:
+Una memoria cache è una memoria:
+• Veloce e costosa
+
+DOMANDA 63:
+Si consideri il seguente metodo Java:
+public static void cosaFa(int[] v, short y) {
+       int i = 0;
+while (i<v.length) v[++i] = y;
+}
+Una sola delle seguenti affermazioni è vera. Quale?
+• Il metodo genera una eccezione di tipo ArrayIndexOutOfBoundsException. 
+
+DOMANDA 64:
+Le variabili statiche di un processo sono memorizzate nel segmento:
+• DATA 
+
+DOMANDA 65:
+Una risorsa di trasferimento è caratterizzata da una capacità di C bit/s; la portata media (throughput) della risorsa (espressa in bit/s)
+• non è mai maggiore di C 
+
+DOMANDA 66:
+Si consideri la classe Prova così definita:
+private class Prova{
+       public int x;
+       public static int y;
+}
+Una solo dei seguenti metodi non è corretto e non potrebbe apparire nella definizione di Prova. Quale?
+• public static void metodoC() {x++;} 
+
+DOMANDA 67:
+Le variabili locali alle funzioni di un processo sono memorizzate nel segmento:
+• STACK 
+
+DOMANDA 68:
+I modi naturali
+• compongono l’evoluzione libera
+
+DOMANDA 69:
+Si consideri la seguente espressione booleana: !(a || b) && b Una sola delle seguenti affermazioni è vera. Quale?
+• l'espressione restituisce sempre false.
+
+DOMANDA 70:
+Quale tipologia di visita di un albero di ricerca binario (BST) ne esamina la chiavi in ordine crescente?
+• In profondità con ordine simmetrico (in-order) 
+
+DOMANDA 71:
+Si consideri il seguente frammento di codice:
+String var1="var1";
+if(var1!=null){
+       String var2="copia di "+var1;
+}
+System.out.println(var2);
+Assumendo che le uniche variabili sono quelle nel frammento di codice, una sola delle seguenti affermazioni è vera. Quale? Scegliere una risposta.
+• Il programma da un errore a tempo di compilazione 
+
+DOMANDA 72:
+In un sistema di controllo con reazione dall'uscita è possibile assegnare ad arbitrio tutti gli autovalori
+• se e solo se tutti gli autovalori del processo sono raggiungibili ed osservabili.
+
+DOMANDA 73:
+Una sola delle seguenti affermazioni sulla memoria virtuale è falsa. Quale?
+• Essendo basato su pagine tutte della stessa dimensione, consente di portare a zero il livello di frammentazione interna della memoria 
+
+DOMANDA 74:
+Le modulazioni numeriche in banda traslata si utilizzano per multiplare più segnali numerici sullo stesso canale.
+• A parità di banda del canale, meno è larga l’occupazione in banda del segnale, più è alto il numero di segnali che possono essere trasmessi contemporaneamente X
+
+DOMANDA 75:
+Sia R1(A,B,C) uno schema di relazione. Si consideri la seguente query espressa in SQL:
+       SELECT C
+       FROM R1
+       WHERE A=B
+Una sola delle seguenti affermazioni è vera. Quale?
+• la query corrisponde ad un'espressione dell'algebra relazionale in cui si usano le due operazioni di proiezione e selezione 
+
+DOMANDA 76:
+Una sola delle seguenti affermazioni sul modello Entità-Relazione è vera. Quale?
+• La relazione ISA si può definire tra due relazioni, ma solo se tali relazioni hanno gli stessi ruoli; 
+
+DOMANDA 77:
+Si consideri il seguente frammento di programma Java
+class Nodo {
+       public Nodo next;
+       public Object elem;
+       public Nodo(Object e, Nodo n) {
+       elem=e; next=n;
+       }
+       public String toString() {
+       if (next==null) return elem.toString();
+       else return elem+" "+this.next;
+       }
+}
+public class Test {
+       public static void main(String[] args) {
+       Nodo init = new Nodo("A",new Nodo("B",new Nodo("C",null)));
+       System.out.println(init);
+       }
+}
+Una sola delle seguenti affermazioni è corretta. Quale?
+• Il programma è eseguito correttamente e stampa A B C
+
+DOMANDA 78:
+L’elemento chiave per evitare il reiterarsi di collisioni in un accesso multiplo (MAC) casuale è:
+• la casualizzazione della durata dell’intervallo di tempo di attesa prima di tentare la nuova emissione (noto come back-off) 
+
+
+
+DOMANDA 79:
+Le stringhe che appaiono in un programma C (es. “hello world”) sono memorizzate nel segmento:
+• DATA
+
+DOMANDA 80:
+Si consideri un processo con due autovalori in +1 e -1; quello in +1 è raggiungibile ed osservabile, mentre quello in -1 è irraggiungibile ed osservabile. Quali di queste affermazioni è corretta?
+• il processo è instabile, ma è stabilizzabile asintoticamente
+
+DOMANDA 81:
+Una sola delle seguenti affermazioni è vera. Quale? Il tempo di vita di una variabile di istanza coincide con il tempo di vita:
+• B dell'oggetto a cui appartiene. 
+
+DOMANDA 82:
+Quale delle seguenti proposizioni è falsa?
+• n + log n ? O(log n) 
+
+DOMANDA 83:
+Dato il seguente programma:
+import java.util.*;
+class Test {
+       public static void main (String args[]) {
+       Object a = new HashSet();
+System.out.print((a instanceof Set)+",");
+       System.out.print(a instanceof SortedSet);
+       }
+}
+Qual'è il risultato della compilazione ed esecuzione del programma? Scegliere una risposta.
+• Stampa:true,false 
+
+DOMANDA 84:
+Parte del codice eseguibile delle funzioni di un processo è memorizzato nel segmento:
+• CODE 
+
+DOMANDA 85:
+Si consideri la seguente definizione del metodo modificaNumeriPari:
+       public static int[] modificaNumeriPari(int[] dati, double[] delta, int num) {
+       //Altro codice qui...
+       }
+Quale dei seguenti metodi non sovraccarica (overload) correttamente il metodo generando quindi un errore in fase di compilazione?
+• public double[] modificaNumeriPari(int[] dati, double[] delta, int num) {
+       //Altro codice qui...
+  }
+
+DOMANDA 86:
+Si consideri il seguente metodo per il calcolo del fattoriale
+public static long fattoriale(long n) {
+       if (n == 0)
+       return 1;
+       else
+       return n * fattoriale(n-1);
+}
+Solo una delle seguenti affermazioni è vera. Dire quale.
+• Il numero di record di attivazione presenti nello stack quando il metodo viene invocato con valore 0 del parametro è n+1. 
+
+DOMANDA 87:
+La nozione di "relazione" è alla base del modello relazionale dei dati. Una sola delle seguenti affermazioni è vera. Quale?
+• Una relazione nel modello relazionale è definita come una relazione matematica, ovvero come un sottoinsieme del prodotto cartesiano di N insiemi di valori, dove N è il grado della relazione; 
+
+DOMANDA 88:
+Quanto dovrebbe essere grande una tabella delle pagine per mappare uno spazio di memoria virtuale di 1 TB su uno spazio di memoria fisico di 4 GB con pagine di 1 KB?
+• 4 GB 
+
+DOMANDA 89:
+Si consideri il seguente frammento di codice Java:
+import java.util.*;
+public class Test {
+       public static void main(String[] args){
+       List<Integer> l = new ArrayList<Integer>();
+       l.add(new Integer(1));
+       l.add(new Integer(2));
+       l.add(new Integer(3));
+       ... // ISTRUZIONE A QUI
+       while (i.hasNext()) {
+       int q;
+       ... // ISTRUZIONE B QUI
+       System.out.println(q*q);
+       }
+       }
+}
+Mettendo al posto delle istruzioni mancanti le seguenti istruzioni A e B, una sola tra queste combinazione è errata e non produce il risultato di stampare i numeri 1, 4, 9. Quale? Scegliere una risposta.
+• A: Iterator<Object> i = l.iterator(); B: q = (Integer)i.next(); 
+
+DOMANDA 90:
+Per quale motivo si digitalizzano i segnali analogici mediante campionamento e quantizzazione?
+• per poterli trasmettere in sistemi digitali con migliori prestazioni e migliore qualità
+
+DOMANDA 91:
+Si consideri il seguente metodo, assumendo che esso sia invocato con valore del parametro n > 0:
+public static long myfatt(long n) {
+       if (n == 0)
+       return 1;
+else
+       return n * myfatt(n);
+}
+Solo una delle seguenti affermazioni è vera. Dire quale.
+• L'esecuzione del metodo causa un overflow dello stack della Java Virtual Machine in quanto determina un numero potenzialmente infinito di invocazioni ricorsive. 
+
+DOMANDA 92:
+Si ricorda che il tipo float è rappresentato in Java da 32 bit, mentre il tipo double da 64 bit. Una sola delle seguenti affermazioni è vera. Quale?
+• Il numero di double distinti rappresentabili è maggiore del numero di float distinti rappresentabili
+
+DOMANDA 93:
+La risposta a regime permanente
+• è calcolata facendo il limite per t che tende all’infinito;
+DOMANDA 94:
+La reificazione di una relazione è una operazione prevista nella metodologia di progettazione concettuale di basi di dati e consiste nella trasformazione di una relazione in una entità. Una sola delle seguenti affermazioni sulla reificazione di una relazione è corretta. Quale?
+• Se la relazione R ha n ruoli, allora la reificazione della relazione R produrrà una entità che parteciperà ad n relazioni, dove ciascuna partecipazione sarà caratterizzata dalla cardinalità (1,1); 
+
+DOMANDA 95:
+Si consideri il seguente frammento di codice:
+public class PezzoMusicale {
+       public static void riproduci(PezzoMusicale i) {
+       i.play();
+       }
+       public void play() {
+       /* altro codice */
+       }
+}
+Quali delle seguenti istruzioni genera un errore in fase di compilazione?
+•  PezzoMusicale canzone = new PezzoMusicale();
+   PezzoMusicale.play();
+
+DOMANDA 96:
+Un processo è stabilizzabile asintoticamente con reazione dall'uscita
+• se e solo se tutti i suoi autovalori irraggiungibili e/o inosservabili sono a parte reale negativa; 
+
+DOMANDA 97:
+Qual è il tempo tipico di accesso (latenza) a una memoria DRAM?
+• 10-100 nanosecondi 
+
+DOMANDA 98:
+Si consideri il seguente frammento di codice:
+public static void main(String[] args) {
+       String[] array=new String[10];
+       int i=0;
+while(i<10){
+       if(i%2==0){
+       array[i]="ok";
+       continue;
+       }
+       i++;
+       }
+       int cont=0;
+       for(i=0;i<10;i++)
+       if(array[i].equals("ok"))
+       cont++;
+       System.out.println(cont);
+}
+Una sola delle seguenti affermazioni è vera. Quale?
+• L'esecuzione del metodo non termina. 
+
+DOMANDA 99:
+Una sola delle seguenti affermazioni è corretta. Quale?
+• La direttiva package auto.utilita; deve essere la prima dichiarazione di un file Java contenuto in una directory auto\utilita. 
+
+DOMANDA 100:
+Lo scopo di una memoria cache è:
+• Sfruttare le proprietà di località dei programmi per velocizzare gli accessi a memoria
+DOMANDA 101:
+Una sola delle seguenti affermazioni sull'operazione di full outer-join in SQL è corretta. Quale?
+• Quando i due operandi non hanno valori nulli, il full outer-join coincide con il join dei due operandi; 
+
+DOMANDA 102:
+Si consideri il seguente metodo:
+public static void stampa() {
+       for (int i=1; i<10; i=i+i) {
+       if (i==5) break;
+       System.out.print (i);
+       }
+}
+Una sola delle seguenti affermazioni è vera. Quale?
+• L'istruzione break all'interno del metodo stampa() non viene mai eseguita. 
+
+DOMANDA 103:
+Si consideri uno schema Entità-Relazione in cui l'entità STUDENTE è legata all'entità UNIVERSITÀ dalla relazione ISCRITTO. Si vuole esprimere nello schema il vincolo che ogni studente è iscritto ad una ed una sola UNIVERSITÀ. Una sola delle seguenti affermazioni è vera. Quale?
+• Si può esprimere il vincolo mediante la cardinalità (1,1) del ruolo che collega STUDENTE a UNIVERSITÀ
+
+DOMANDA 104:
+A cosa serve in una rete in area locale (LAN) un protocollo di accesso multiplo?
+• ad evitare che utenti differenti collidano durante la trasmissione su una risorsa comune (es. canale di comunicazione) 
+
+DOMANDA 105:
+Si consideri un sistema con una piccola cache completamente associativa contenente 2 sole linee da 16 byte ciascuna. Quanti cache miss vengono generati dal seguente frammento di programma?
+int v[12];
+v[0]=5;
+v[1]=4;
+v[10]=3;
+v[8]=2;
+v[2]=v[10];
+v[9]=v[1];
+Assumere che l’array v sia allineato a un indirizzo multiplo di 16 byte e che la cache inizialmente non contenga alcun blocco di memoria in uso al processo.
+• 2 
+
+DOMANDA 106:
+Un processo è in stato ready se:
+• È nelle condizioni di essere eseguito, ma non lo è perche? tutti i core delle CPU disponibili nel sistema sono impegnati nell’esecuzione di altri processi 
+
+DOMANDA 107:
+Il segmento TEXT/CODE di un processo mantiene:
+• Il codice eseguibile su cui è basato il processo 
+
+DOMANDA 108:
+La stabilità interna di un sistema lineare
+• A è una proprietà delle evoluzioni libere nello stato; 
+
+DOMANDA 109:
+La funzione n! è
+• O(nn) 
+DOMANDA 110:
+Si consideri il seguente metodo (il cui corpo è volutamente privo di indentazione):
+public static int f (int a, int b, int c) {
+       if (a>b)
+       if (b>c)
+       return a;
+       else
+       return c;
+       return b;
+}
+Si assuma che il metodo venga invocato con i seguenti paramentri attuali: f(10, 5, 7). Una sola delle seguenti affermazioni è vera. Quale?
+• L'else fa riferimento al secondo if. Il metodo restituisce quindi 7.
+
+DOMANDA 111:
+Una sola delle seguenti affermazioni sull'uso dell'istruzione continue è vera. Quale?
+• L'istruzione continue permette di passare all'iterazione successiva del ciclo all'interno del quale è invocata. 
+
+DOMANDA 112:
+Qual è il minimo numero di nodi pozzo (grado di uscita = 0) in un DAG?
+• 1 
+
+DOMANDA 113:
+Una sola delle seguenti istruzioni compila correttamente senza generare errori o messaggi di avviso (warning). Quale? (Si ricorda che ArrayList e LinkedList implementano l'interfaccia List e che List a sua volta estende l'interfaccia Collection) Scegliere una risposta.
+• Collection<?> x = new ArrayList<String>(); 
+
+DOMANDA 114:
+Qual è la dimensione tipica di una pagina in un sistema di memoria virtuale?
+• 4 KB 
+
+DOMANDA 115:
+Da un punto di vista prestazionale, un modo di trasferimento in rete di tipo a circuito è indicato
+• soprattutto quando le sorgenti di traffico sono prevalentemente continue (es: voce o streaming) 
+
+DOMANDA 116:
+La relazione ISA tra entità è una struttura che si può usare nel modello Entità-Relazione. Una sola delle seguenti affermazioni sulla relazione ISA è corretta. Quale?
+• Se tra l'entità E e l'entità F sussiste la relazione ISA, allora ogni istanza di E è anche istanza di F.  (nota: se è E ISA F)
+
+DOMANDA 117:
+Il segmento STACK di un processo mantiene:
+• I record di attivazione delle funzioni
+
+DOMANDA 118:
+Quanti cache miss genera la scansione lineare di un array di n elementi assumendo una cache in cui ogni linea può contenere k elementi dell’array?
+• n/k 
+
+DOMANDA 119:
+Si consideri un’architettura di comunicazione protocollare a strati (layered); Le entità appartenenti a strati adiacenti (es. strato N e strato N-1):
+• comunicano direttamente tra loro se appartengono allo stesso sistema 
+
+
+DOMANDA 120:
+Una sola delle seguenti affermazioni è vera. Quale? Il tempo di vita di una variabile statica coincide con il tempo di vita:
+• della classe a cui appartiene.
+
+DOMANDA 121:
+Una memoria DRAM non conserva i dati in essa immagazzinati in assenza di alimentazione elettrica. È richiesto un refresh elettrico:
+• Ogni 10-100 millisecondi 
+
+DOMANDA 122:
+Quanti bit deve avere un puntatore per indirizzare uno spazio di memoria virtuale di 1 GB?
+• 30 
+
+DOMANDA 123:
+Il segmento DATA di un processo mantiene:
+• Le variabili con durata statica (es. variabili globali) di un programma
+
+DOMANDA 124:
+I parametri delle funzioni di un processo sono memorizzati nel segmento:
+• STACK 
+
